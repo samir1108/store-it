@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@theme{
+  --color-primary: #0077cc;
+  --color-secondary: #666;
+  --color-tertiary: #999; 
+}
+html{
+  @apply scroll-smooth
+}
+::-webkit-scrollbar{
+  display: none;
+}
+/* app/globals.css */
+/* app/globals.css */
+
+.glow-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #ffffff, #7dd3fc);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(125, 211, 252, 0.6); /* soft blue glow */
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.6);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 0 45px rgba(125, 211, 252, 0.9);
+  }
+}
